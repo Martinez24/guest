@@ -27,6 +27,9 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { PrivadoPageComponent } from './components/privado-page/privado-page.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
+//Rutas
+import { AppRoutingModule } from "./app-routing-module";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +49,8 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
     AngularFireDatabaseModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
     ProductService
